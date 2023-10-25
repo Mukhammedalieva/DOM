@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>oninput</title>
+</head>
+<body>
+	<h1 id="text">Forms</h1>
+	<input value="" id="input" type="text" name="" >
+	<button id="button" disabled>click</button>
+	<script type="text/javascript">
+		let tex = document.getElementById('text')
+		let inp = document.getElementById('input')
+		let but = document.getElementById('button')
+
+		inp.oninput=()=>{
+			if(inp.value != ""){
+				but.disabled = false
+			}
+			else{
+				but.disabled = true
+			}
+		}
+		but.onclick=()=>{
+			tex.innerText = `hello ${inp.value}`
+		}
+
+
+
+		// let tex = document.getElementById('text')
+		// let inp = document.getElementById('input')
+		// let but = document.getElementById('button')
+		// console.dir(but)
+
+		// inp.oninput=()=>{
+		// 	console.log(inp.value)
+
+		// 	if(inp.value != ""){
+		// 		but.disabled = false
+		// 	}
+		// 	else{
+		// 		but.disabled = true
+		// 	}
+
+		// }
+
+		
+		// but.onclick = ()=>{
+			
+		// 	tex.innerText = `hello ${inp.value} `
+
+		// }
+		
+
+
+
+		
+	</script>
+
+</body>
+</html>

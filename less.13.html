@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tesla</title>
+	<style type="text/css">
+	.conteiner{
+		width: 60%;
+		height: 90%;
+		border: 1 solid black;
+		margin: auto;
+	}	
+		.text{
+			text-align: center;
+			font-size: 50px;
+
+		}
+		.foto{
+			width: 700px;
+			height: 350px;
+			border: 1px solid black;
+			margin: auto;
+			
+		}
+		.tesla{
+			width: 700px;
+			height: 300px;
+			position: absolute;
+			background-position: center;
+			background-size: cover;
+			margin: auto;
+			transition: 20s;
+
+			
+		}
+		.box{
+			width: 48%;
+			height: 50%;
+			border: 1px solid black;
+			margin: auto;
+			display: flex;
+		}
+		
+		.a{
+			width: 68px;
+			height: 68px;
+			border-radius: 68px;
+			border: 5px solid white;
+			position: relative;	
+		}
+		
+		  
+		 .red{
+		 	width: 70px;
+			height: 70px;
+			border-radius: 70px;
+			background-size: cover;
+		 	position: absolute;
+			top: -1px;
+			left: -1px;
+		 	background-image: url(https://p1.hiclipart.com/preview/294/226/452/3d-circle-sphere-disk-threedimensional-space-ball-3d-computer-graphics-red-png-clipart.jpg);
+		 }
+		 
+		 .black{
+		 	width: 70px;
+			height: 70px;
+			border-radius: 70px;
+			background-size: cover;
+		 	position: absolute;
+			top: -1px;
+			left: -1px;
+			background-image: url(./blackvek.jpg);
+		 }.blue{
+		 	width: 72px;
+			height: 72px;
+			border-radius: 70px;
+			background-size: cover;
+		 	position: absolute;
+		 	background-position: center;
+			top: -3px;
+			left: -3px;
+		 	background-image: url(https://e7.pngegg.com/pngimages/682/307/png-clipart-blue-orb-computer-icons-sphere-installation-shape-3d-blue-computer-wallpaper-thumbnail.png);
+		 	
+
+		 }
+		 .grey{
+		 	width: 70px;
+			height: 70px;
+			border-radius: 90px;
+			background-size: cover;
+			background-position: center;
+		 	position: absolute;
+			top: -1px;
+			left: -1px;
+		 	background-image: url(https://w7.pngwing.com/pngs/431/106/png-transparent-sphere-grey-black-and-white-ball-3d-solid-geometry-gypsum-brush-white-grey-3d-arrows.png);
+		 }
+		 .white{
+		 	width: 70px;
+			height: 70px;
+			border-radius: 90px;
+			background-size: cover;
+			background-position: center;
+		 	position: absolute;
+			top: -1px;
+			left: -1px;
+		 	background-image: url(./whitevek.jpg);
+		 }
+
+	</style>
+		
+</head>
+<body>
+	<div class="conteiner">
+		<div class="text">Chose your dream Tesla</div>
+<!-- Машина  --><!-- Машина  --><!-- Машина  --><!-- Машина  --><!-- Машина  --><!-- Машина  -->
+		<div id="mashina" class="foto">
+			<img id="m" class="tesla" src="./tes5.png">
+		</div>
+<!-- Шариктер --><!-- Шариктер --><!-- Шариктер --><!-- Шариктер --><!-- Шариктер --><!-- Шариктер -->
+		<div class="box">
+			<div id="sharik-1" class="a sharik1">
+				<div id="red1" class="f red"></div>
+			</div>
+			<div id="sharik-2" class="a sharik2">
+				<div id="black1" class="f black"></div>
+			</div>
+			<div id="sharik-3" class="a sharik3">
+				<div id="blue1" class="f blue"></div>
+				
+			</div>
+			<div id="sharik-4" class="a sharik4">
+				<div id="grey1" class="f grey"></div>
+			</div>
+			<div id="sharik-5" class="a sharik5">
+				<div id="white1" class="f white"></div>
+			</div>
+		</div>
+	</div>
+		<script type="text/javascript">
+
+		let mash = document.getElementById('mashina')
+		let m = document.getElementById('m')
+		let b = document.getElementById('red1')
+		let c = document.getElementById('black1')
+		let d = document.getElementById('blue1')
+		let e = document.getElementById('grey1')
+		let g = document.getElementById('white1')
+
+		let y1 = document.getElementById('sharik-1')
+		let y2 = document.getElementById('sharik-2')
+		let y3 = document.getElementById('sharik-3')
+		let y4 = document.getElementById('sharik-4')
+		let y5 = document.getElementById('sharik-5')
+
+		function TESLA1(){
+			console.log('da')
+			m.src = './whl2.png'
+			y1.style.border = '0'
+			y2.style.border = '4px solid blue'
+			y3.style.border = '0'
+			y4.style.border = '0'
+			y5.style.border = '0'
+		}
+		c.onclick=TESLA1
+		
+
+		function TESLA2(){
+			console.log('da')
+			m.src = './whl4.png'
+			y1.style.border = '0'
+			y2.style.border = '0'
+			y3.style.border = '4px solid blue'
+			y4.style.border = '0'
+			y5.style.border = '0'
+
+		}
+		d.onclick=TESLA2
+
+		function TESLA3(){
+			console.log('da')
+			m.src = './whl3.png'
+			y1.style.border = '0'
+			y2.style.border = '0'
+			y3.style.border = '0'
+			y4.style.border = '4px solid blue'
+			y5.style.border = '0'
+
+		}
+		e.onclick=TESLA3
+		
+
+		function TESLA4(){
+			console.log('da')
+			m.src = './whl1.png'
+			y1.style.border = '0'
+			y2.style.border = '0'
+			y3.style.border = '0'
+			y4.style.border = '0'
+			y5.style.border = '4px solid blue'
+
+		}
+		g.onclick=TESLA4
+
+		function TESLA5(){
+			console.log('da')
+			m.src = './tes5.png'
+			y1.style.border = '4px solid blue'
+			y2.style.border = '0'
+			y3.style.border = '0'
+			y4.style.border = '0'
+			y5.style.border = '0'
+
+		}
+		b.onclick=TESLA5
+
+		
+	</script>
+
+	
+
+</body>
+</html>

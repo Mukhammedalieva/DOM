@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Croissant+One&family=Fuggles&family=Lobster&family=Martian+Mono:wght@100&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ватсап статус</title>
+	<style type="text/css">
+		.conteiner{
+			width: 100%;
+			height: 600px;
+			position: absolute;
+			
+
+		}
+		.text{
+			font-size: 50px;
+			text-align: center;
+			position: relative;
+			top: 150px;
+
+		}
+		.box{
+			width: 100%;
+			height: 40px;
+			position: relative;
+			border: 1px solid white;
+			top: 250px;
+			
+
+		}
+		.k{
+			width: 150px;
+			height: 30px;
+			border-radius: 30px;
+			position: relative;
+			margin: auto;
+			left: 350px;
+		}
+		.knopka2{
+			left: 650px;
+			height: 30px;
+			top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="cont" class="conteiner">
+		<div id="text" class="text"></div>
+		<div class="box">
+			<button id="knopka1" class="k knopka1"></button>
+			<button id="knopka2" class="k knopka2"></button>
+		</div>
+	</div>
+	<script type="text/javascript">
+		let shrif = [
+			`'Bangers', cursive`,
+			`'Croissant One', cursive`,
+			`'Lobster', cursive`,
+			`'Fuggles', cursive`,
+			`'Martian Mono', monospace`,
+			]
+		let colors = [
+			`red`,
+			`green`,
+			`yellow`,
+			`brown`,
+			`pink`,
+			]
+
+		let cont = document.getElementById('cont')
+		let tex = document.getElementById('text')
+		let but1 = document.getElementById('knopka1')
+		let but2 = document.getElementById('knopka2')
+		let pr = prompt('vvedite text')
+		
+		tex.innerHTML = `<p>${pr}</p>`
+
+		but1.innerText = shrif[0]
+		tex.style.fontFamily = shrif[0]
+
+		let a = 0
+
+		function Box1(){
+			a++
+			// console.log(a)
+			if(a>=shrif.length){
+				a = 0
+				tex.style.fontFamily = shrif[a]
+				but1.innerText = shrif[a]
+				console.log(a)
+			}
+			else{
+				tex.style.fontFamily = shrif[a]
+				but1.innerText = shrif[a]
+				console.log(a)
+
+			}
+
+
+		}
+		but1.onclick = Box1
+
+
+		but2.innerText = colors[0]
+		cont.style.backgroundColor = colors[0]
+		let b = 0
+		function Box2(){
+			b++
+			if(b>=colors.length){
+				b = 0
+				cont.style.backgroundColor = colors[b]
+				but2.innerText = colors[b]
+			}
+			else{
+				cont.style.backgroundColor = colors[b]
+				but2.innerText = colors[b]
+				console.log(b)
+
+			}
+
+		}
+		but2.onclick = Box2
+
+		
+	</script>
+
+</body>
+</html>

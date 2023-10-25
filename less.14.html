@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Скрыть пароль-Показать пароль</title>
+	<style type="text/css">
+		.conteiner{
+			width: 100%;
+			height: 700px;
+			background-color: red;
+
+		}
+		
+		.n{
+			width: 200px;
+			height: 30px;
+			position: relative;
+			top: 300px;
+			left: 500px;
+			
+
+			
+		}
+		.a{
+			border-bottom-left-radius: 20px;
+			border-top-left-radius: 20px;
+		}
+		.b{
+			width: 150px;
+			height: 38px;
+			border-top-right-radius: 20px;
+			border-bottom-right-radius: 20px;
+			top: 300px;
+		}
+	</style>
+</head>
+<body>
+	<div class="conteiner">
+		
+		<input id="input" class="n a" type="password" name="" placeholder="пароль">
+		<button id="button" class="n b">Показать пароль</button>
+		
+	</div>
+	<script type="text/javascript">
+		let inp = document.getElementById('input')
+		let but = document.getElementById('button')
+		 
+		 function Box(){
+		 	if(but.innerText == 'Показать пароль'){
+		 		console.log("da")
+		 		inp.type = "text"
+		 		but.innerText = 'Скрыть пароль'
+		 	}
+		 	else {
+		 		inp.type = "password"
+		 		but.innerText = 'Показать пароль'
+		 		
+		 	}
+		 }
+		 but.onclick = Box
+		 // let inp = document.getElementById('input')
+		// let but = document.getElementById('button')
+		// function Box(){
+		// 	if(but.innerText == 'Pokazat paroll'){
+		// 		inp.type = "text"
+		// 		but.innerText = 'Skryt parol'
+		// 	}
+		// 	else{
+		// 		inp.type = 'password'
+		// 		but.innerText = 'Pokazat paroll'
+		// 	}
+		// }
+		// but.onclick = Box
+	</script>
+
+</body>
+</html>

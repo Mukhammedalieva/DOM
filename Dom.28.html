@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>localStorage и sessionStorage</title>
+</head>
+<body>
+	<h1>LocalStorage - Локальное хранилище</h1>
+	<input id="inp" type="text" name="" placeholder="........">
+	<div style="margin-top: 30px">
+		<button id="but1">load date</button>
+		<button id="but2">Save data</button>
+	</div>
+	<script type="text/javascript">
+		let inp = document.getElementById('inp')
+		let but1 = document.getElementById('but1')
+		let but2 = document.getElementById('but2')
+
+
+
+		console.dir(inp)
+
+		but1.onclick=()=>{
+			inp.value = localStorage.getItem('but2')
+			
+
+		}
+		but2.onclick=()=>{
+			localStorage.setItem('but2', inp.value)
+		}
+
+
+	</script>
+	
+
+
+</body>
+</html>

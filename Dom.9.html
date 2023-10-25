@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>светафор</title>
+	<style type="text/css">
+		.conteiner{
+			width: 350px;
+			height: 400px;
+			display: flex;
+			margin: auto;
+		    margin-top: 55px;
+		}
+		.x{
+			width: 150px;
+			height: 350px;
+			background-color: black;
+		}
+		.BOX1{
+
+		}
+		.BOX2{
+			margin-left: 50px;
+		}
+		.b{
+			width: 115px;
+			height: 115px;
+			border-radius: 100%;
+			margin-left: 18px;
+		}
+		.box1{
+			border: 2px solid red;
+		}
+		.box2{
+			background-color: yellow;
+			font-size: 100px;
+			color: black;
+			text-align: center;
+			transition: 2s;
+		}
+		.box2:hover{
+			font-size: 80px;
+		}
+		.box3{
+			background-color: limegreen;
+			
+		}
+		.box4{
+			background-color: red;
+		}
+		.box5{
+			background-color: yellow;
+			font-size: 100px;
+			color: black;
+			text-align: center;
+			transition: 2s;
+		}
+		.box5:hover{
+			font-size: 80px;
+		}
+		.box6{
+			border: 2px solid limegreen;
+			
+		}
+		.button{
+			width: 70px;
+			height: 30px;
+			border: 2px solid red;
+			border-radius: 20px;
+			margin-left: 640px;
+		}
+	</style>
+</head>
+<body>
+	<div class="conteiner">
+		<div class="x BOX1">
+			<div id="red1" class="b box1"></div>
+			<div id="yellow1" class="b box2">15</div>
+			<div id="green1" class="b box3"></div>
+		</div>
+		<div class="x BOX2">
+			<div id="red2" class="b box4"></div>
+			<div id="yellow2" class="b box5">15</div>
+			<div id="green2" class="b box6"></div>
+		</div>
+	</div>
+	<button id="button" class="button" type="text" name="button">Swich</button>
+	<script type="text/javascript">
+		console.dir(document.body.children[0])
+		let a = document.getElementById('red1')
+		let b = document.getElementById('green1')
+		let c = document.getElementById('red2')
+		let d = document.getElementById('green2')
+		let but = document.getElementById('button')
+		function BOX1(){
+			{a.style.backgroundColor = a.style.backgroundColor == 'black' ?  'red' : 'black'}
+			{b.style.backgroundColor = b.style.backgroundColor == 'green' ? 'black': 'green'}
+			{c.style.backgroundColor = c.style.backgroundColor =='green' ?  'black': 'green'}
+			{d.style.backgroundColor = d.style.backgroundColor == 'black' ? 'green': 'black'}
+		}
+		but.onclick = BOX1
+
+
+
+		// but.onclick = ()=>{
+		// 	a.style.backgroundColor == 'black' ? a.style.backgroundColor = 'red' : null
+		// 	b.style.backgroundColor == 'green' ? b.style.backgroundColor = 'black': null
+		// 	c.style.backgroundColor == 'green' ? c.style.backgroundColor = 'black': null
+		// 	d.style.backgroundColor == 'black' ? d.style.backgroundColor = 'green': null
+
+		// }
+
+
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>Основой HTML-документа являются теги.В соответствии с объектной моделью документа («Document Object Model», коротко DOM), каждый HTML-тег является объектом. Вложенные теги являются «детьми» родительского элемента. Текст, который находится внутри тега, также является объектом.</h1>
+	<script type="text/javascript">
+		console.dir(document.body.children[0])
+		let a = document.body.children[0]
+		let b = +prompt("san kirgiz")
+		if(b<=15){
+			a.style.fontSize = '20px'
+			
+		}else if(b>15 && b<=25){
+			a.style.fontSize = '50px'
+		}else if(b>25 && b<=35 || b>35 ){
+			a.style.fontSize = '80px'
+		}
+		
+
+
+	</script>
+
+</body>
+</html>

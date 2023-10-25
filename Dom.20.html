@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>onekeypress</title>
+</head>
+<body>
+	<!-- №1 -->
+	<!-- мында тамга, цифра, энтер, пробел гана   консол дирде кейге барып тушот -->
+	<!-- <h1 id="h">hello world</h1>
+	<script type="text/javascript">
+		let h = document.getElementById('h')
+		document.body.onkeypress=(a)=>{
+			console.dir(a)
+		}
+	</script> -->
+
+	<!-- №2 -->
+	<!-- <h1 id="q">hello world</h1>
+	<input id="h" type="text" name="">
+	<script type="text/javascript">
+		let h = document.getElementById('h')
+		let q = document.getElementById('q')
+		document.body.onkeypress=(a)=>{
+			h.oninput=()=>{
+				q.innerText += 'da'
+			}
+			
+		}
+	</script> -->
+	<!-- №3 -->
+	<h1 id="q">hello world</h1>
+	<input id="h" type="text" name="">
+	<script type="text/javascript">
+		let h = document.getElementById('h')
+		let q = document.getElementById('q')
+		document.body.onkeypress=(a)=>{
+			h.oninput=()=>{
+				if (a.key == 'a') {
+					q.innerText += 'da'
+				}
+			}
+			
+		}
+	</script>
+
+
+
+	
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rodo list(0)</title>
+	<style type="text/css">
+		.box{
+			width: 250px;
+			height: 70px;
+			background-color: red;
+			border-radius: 15px;
+			position: relative;
+			top: 530px;
+			transition: 1s;
+		}
+		.h{
+			
+			text-align: center;
+			color: yellow;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="text">Todo list(0)</h1>
+	<input id="input" type="text" name="">
+	<button id="button" >click</button>
+	<ul id="ul"></ul>
+	<div id="div" class="box">
+		<h1 class="h">Напишите что-нибудь</h1>
+	</div>
+	<script type="text/javascript">
+		let text = document.getElementById('text')
+		let inp = document.getElementById('input')
+		let but = document.getElementById('button')
+		let div = document.getElementById('div')
+		let ul = document.getElementById('ul')
+
+		let a = 0
+
+		but.onclick=()=>{
+			if(inp.value != ""){
+				a++
+				text.innerText = `Todo list(${a})`
+				
+				ul.innerHTML += `<li>${inp.value}</li>`
+				inp.value = ""
+			}
+			else{
+				div.style.top = '300px'
+				setTimeout(()=>{
+					div.style.top = '530px'
+					
+				},2000)
+			}
+		}
+	</script>
+
+</body>
+</html>
